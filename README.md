@@ -16,8 +16,8 @@ The images referenced in **`source_images.txt`**  were sourced from PlatesMania,
 * ***Resolution & Upsampling***: The script enforces a minimum resolution threshold of 224 × 80 pixels. Any images falling below this limit are automatically upsampled using cubic interpolation prior to the degradation phase to ensure the stable execution of augmentation kernels like rain and snow.
 
 <p align="center">
-  <img src="media/samples.jpg" width="500" alt="Original PlatesMania Samples">
-  <img src="media/samples-cropped.jpg" width="500" alt="Extracted ROI Samples">
+  <img src="media/samples.jpg" width="400" alt="Original PlatesMania Samples">
+  <img src="media/samples-cropped.jpg" width="400" alt="Extracted ROI Samples">
   <br>
   <em>Left: Full vehicle captures from PlatesMania (Source) Right: Extracted & Filtered ROI crops (Input)</em>
 </p>
