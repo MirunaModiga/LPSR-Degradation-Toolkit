@@ -6,7 +6,7 @@ effects:
       blur_limit: [7, 15]
       p: 1.0
 
-  DISTANTA:
+  DISTANCE:
     type: Compose
     transforms:
       - type: Resize
@@ -41,7 +41,7 @@ effects:
       fit_output: true
       p: 1.0
 
-  OBSTRUCTIE:
+  OBSTRUCTION:
     type: CoarseDropout
     param_order: [num_holes_range, hole_height_range, hole_width_range, fill]
     params:
@@ -50,7 +50,7 @@ effects:
       hole_width_range: [0.1, 0.2]
       fill: 0
 
-  ZI_PLOAIE:
+  DAY_RAIN:
     type: Compose
     transforms:
       - type: RandomRain
@@ -69,7 +69,7 @@ effects:
           blur_limit: 5
           p: 1.0
 
-  ZI_NINSOARE:
+  DAY_SNOW:
     type: Compose
     transforms:
       - type: RandomSnow
@@ -87,7 +87,7 @@ effects:
           method: texture
           p: 1.0
 
-  NOAPTE_PLOAIE:
+  NIGHT_RAIN:
     type: Compose
     transforms:
       - type: RandomRain
@@ -119,7 +119,7 @@ effects:
         params:
           p: 1.0
 
-  NOAPTE_NINSOARE:
+  NIGHT_SNOW:
     type: Compose
     transforms:
       - type: RandomSnow
@@ -155,7 +155,7 @@ effects:
         params:
           p: 1.0
 
-  SUPRAEXPUNERE:
+  OVEREXPOSURE:
     type: Compose
     transforms:
       - type: RandomBrightnessContrast
@@ -176,3 +176,4 @@ effects:
         params:
           blur_limit: 3
           p: 0.2
+
